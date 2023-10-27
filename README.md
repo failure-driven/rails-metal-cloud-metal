@@ -2,6 +2,10 @@
 
 How to host a rails app at home, move it to the cloud and back to on prem.
 
+[![CI](
+    https://github.com/failure-driven/rails-metal-cloud-metal/actions/workflows/ci.yml/badge.svg
+    )](https://github.com/failure-driven/rails-metal-cloud-metal/actions/workflows/ci.yml)
+
 ## TL;DR
 
 ```sh
