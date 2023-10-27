@@ -10,6 +10,8 @@ group :test do
 end
 
 group :development do
+  gem "capistrano", "~> 3.18", require: false
+
   gem "rubocop", require: false
   gem "rubocop-capybara", require: false
   gem "rubocop-performance", require: false

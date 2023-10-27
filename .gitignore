@@ -1,2 +1,3 @@
 .obsidian
 rubocop_cache
+log/capistrano.log

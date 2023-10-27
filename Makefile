@@ -24,6 +24,10 @@ demo:
 	  'establish Justice,' \
 	  'insure domestic Tranquility,'
 
+.PHONY: demo-1-local-deploy
+demo-1-local-deploy:
+	bundle exec cap production deploy
+
 .PHONY: lint-safe
 lint-safe:
 	bundle exec rubocop -a
@@ -53,6 +57,8 @@ usage:
 	@echo "${YELLOW}make install${NC}                  install dependencies"
 	@echo
 	@echo "${YELLOW}make demo${NC}                     run DEMO script"
+	@echo
+	@echo "${YELLOW}make demo-1-local-deploy${NC}      demo 1: local deploy"
 	@echo
 	@echo "${YELLOW}make lint-safe${NC}                lint app(SAFE)"
 	@echo "${YELLOW}make lint-unsafe${NC}              lint app(UNSAFE)"
