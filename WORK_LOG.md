@@ -2,6 +2,67 @@
 
 ## Fri 27 Oct 2023
 
+### What is a golden SHA
+
+The idea of a background worker that does something "useful" that we want our
+Rails server to do during the demonstration aswe deploy and redeploy the app,
+and all the data (DB, images, jobs) between
+
+    🤘metal🎸 - ☁️ cloud☁️  - 🤘metal🗡️
+
+So why not create a "pseudo" blockchain of SHA256 values starting with 5
+`00000`. The hash will be calculated with the follwoing formula
+
+```
+index + previous hash + timestamp + data + nonce
+```
+
+the `nonce` is an incrementing number to reach the `00000` golden SHA
+
+```sh
+bin/demo-golden-shas-blockchain.rb --locked-time 0 'Genesis block'
+{
+  "index": 0,
+  "previous_hash": "0",
+  "timestamp": 0,
+  "data": "Genesis block",
+  "nonce": 992516,
+  "hash": "00000a288df6681f7d3c2886e653cd93211bdb38d1aefcca7074b4f5dd8c1f93"
+}
+[{"index":0,"previous_hash":"0","timestamp":0,"data":"Genesis block","nonce":992516,"hash":"00000a288df6681f7d3c2886e653cd93211bdb38d1aefcca7074b4f5dd8c1f93"}]
+```
+
+which can be confirmed with unix commands
+
+```sh
+echo -n "000Genesis block992516" | shasum -a 256
+00000a288df6681f7d3c2886e653cd93211bdb38d1aefcca7074b4f5dd8c1f93  -
+
+echo -n '000Genesis block992516' | sha256sum
+00000a288df6681f7d3c2886e653cd93211bdb38d1aefcca7074b4f5dd8c1f93  -
+
+echo -n "000Genesis block992516" | openssl dgst -sha256
+SHA2-256(stdin)= 00000a288df6681f7d3c2886e653cd93211bdb38d1aefcca7074b4f5dd8c1f93
+```
+
+and the command can be run with the `--locked-time <number>` option for
+repeatability, or just run with time incrementing:
+
+```sh
+time bin/demo-golden-shas-blockchain.rb The quick brown fox jumps over the lazy dog
+
+{
+  "index": 0,
+  "previous_hash": "0",
+  "timestamp": 1698374055,
+  "data": "The",
+  "nonce": 154708,
+  "hash": "000000d485c2b7fe9ac21af290ff282f5fdef61274b89baf7b4afc7ff689e035"
+}
+...
+```
+
+### The plan
 Discuss goals between @saramic and @friendlyantz. The plan is something along
 the lines of:
 
