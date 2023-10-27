@@ -9,6 +9,9 @@ require:
 inherit_gem:
   standard: config/ruby-3.2.yml
 
+inherit_from:
+  - .rubocop_local.yml
+
 AllCops:
   TargetRubyVersion: 3.2.2
   DefaultFormatter: progress
@@ -21,35 +24,4 @@ AllCops:
   Exclude:
     - tmp/**/*
     - vendor/**/*
-
-# any rubocop overrides live in here
-
-RSpec/Capybara/FeatureMethods:
-  EnabledMethods:
-    - feature
-    - scenario
-
-RSpec/DescribedClass:
-  EnforcedStyle: explicit
-
-RSpec/ExampleLength:
-  Max: 7
-  CountAsOne:
-    - heredoc
-    - hash
-  Exclude:
-    - spec/features/**/*
-
-RSpec/InstanceVariable:
-  Exclude:
-    - spec/features/**/*
-
-RSpec/MultipleExpectations:
-  Exclude:
-    - spec/features/**/*
-
-Style/BlockComments:
-  Exclude:
-    - spec/spec_helper.rb
-
 
