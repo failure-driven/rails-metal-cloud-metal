@@ -5,13 +5,13 @@
 ### What is a golden SHA
 
 The idea of a background worker that does something "useful" that we want our
-Rails server to do during the demonstration aswe deploy and redeploy the app,
+Rails server to do during the demonstration as we deploy and redeploy the app,
 and all the data (DB, images, jobs) between
 
     🤘metal🎸 - ☁️ cloud☁️  - 🤘metal🗡️
 
 So why not create a "pseudo" blockchain of SHA256 values starting with 5
-`00000`. The hash will be calculated with the follwoing formula
+`00000`. The hash will be calculated with the following formula
 
 ```
 index + previous hash + timestamp + data + nonce
