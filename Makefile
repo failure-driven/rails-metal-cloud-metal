@@ -41,7 +41,7 @@ rspec:
 	bundle exec rspec
 
 .PHONY: ci
-ci: lint-checkonly
+ci: lint-checkonly rspec
 
 .PHONY: usage
 usage:
