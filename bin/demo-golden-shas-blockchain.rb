@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'digest'
-require 'json'
+require "digest"
+require "json"
 
 GOLDEN_SHA = "00000".freeze
 
@@ -11,7 +11,7 @@ previous_hash = "0"
 def calculate_hash(index, previous_hash, timestamp, data)
   nonce = -1
   hash = ""
-  until hash.slice(0, GOLDEN_SHA.length) == GOLDEN_SHA do
+  until hash.slice(0, GOLDEN_SHA.length) == GOLDEN_SHA
     nonce += 1
     hash = Digest::SHA2.hexdigest(
       index.to_s + previous_hash.to_s + timestamp.to_s + data + nonce.to_s
