@@ -36,6 +36,10 @@ lint-unsafe:
 lint-checkonly:
 	bundle exec rubocop
 
+.PHONY: rspec
+rspec:
+	bundle exec rspec
+
 .PHONY: ci
 ci: lint-checkonly
 
@@ -53,6 +57,7 @@ usage:
 	@echo "${YELLOW}make lint-safe${NC}                lint app(SAFE)"
 	@echo "${YELLOW}make lint-unsafe${NC}              lint app(UNSAFE)"
 	@echo "${YELLOW}make lint-checkonly${NC}           check lintintg"
+	@echo "${YELLOW}make rspec${NC}                    run specs"
 	@echo
 	@echo "${YELLOW}make ci${NC}                       CI script"
 	@echo

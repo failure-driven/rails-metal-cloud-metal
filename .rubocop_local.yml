@@ -24,6 +24,9 @@ RSpec/MultipleExpectations:
   Exclude:
     - spec/features/**/*
 
+RSpec/Rails/InferredSpecType:
+  Enabled: false
+
 Style/BlockComments:
   Exclude:
     - spec/spec_helper.rb
