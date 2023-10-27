@@ -11,6 +11,9 @@ end
 
 group :development do
   gem "capistrano", "~> 3.18", require: false
+  # required by capistrano for ed25519 SSH keys
+  gem "ed25519", "~> 1.3"
+  gem "bcrypt_pbkdf", "~> 1.1"
 
   gem "rubocop", require: false
   gem "rubocop-capybara", require: false

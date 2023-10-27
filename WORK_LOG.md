@@ -2,6 +2,53 @@
 
 ## Fri 27 Oct 2023
 
+### Starting with Capistrano
+
+need to access server by SSH so even for localhost on mac need to setup
+following:
+
+> In **System Preferences** under **Sharing**, there is an option for **Remote
+> Login**.
+
+if you have the correct rights you can set this up on the command line
+
+```sh
+sudo systemsetup -setremotelogin on 
+
+# use the System Preferences option above if you get the error
+setremotelogin: Turning Remote Login on or off requires Full Disk Access privileges.
+```
+
+It might be easiest to add your SSH public key to authorised hosts not to have
+to type it in every time you run the cap deploy script.
+
+```sh
+# go to ssh directory
+cd ~/.ssh
+
+# append your public key to the authorized_keys file
+cat id_ed25519.pub >> authorized_keys
+```
+
+```sh
+make demo-1-local-deploy
+bundle exec cap production deploy
+bundle exec cap production deploy:check
+```
+
+got following error so needed to add some keys
+
+```sh
+unsupported key type `ssh-ed25519' (NotImplementedError)
+net-ssh requires the following gems for ed25519 support:
+ * ed25519 (>= 1.2, < 2.0)
+ * bcrypt_pbkdf (>= 1.0, < 2.0)
+See https://github.com/net-ssh/net-ssh/issues/565 for more information
+Gem::LoadError : "ed25519 is not part of the bundle. Add it to your Gemfile."
+```
+
+- [ ] TODO: does not start the app
+
 ### What is a golden SHA
 
 The idea of a background worker that does something "useful" that we want our
