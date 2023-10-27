@@ -22,3 +22,8 @@ a guide for zero to hero and back again
     - [ ] what have we learnt?
     - [ ] cost comparison
     - [ ] smart deploy template?
+
+## Work Log
+
+available at [./WORK_LOG.md](./WORK_LOG.md)
+
