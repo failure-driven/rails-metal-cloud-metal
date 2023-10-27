@@ -26,7 +26,7 @@ demo:
 
 .PHONY: demo-1-local-deploy
 demo-1-local-deploy:
-	bundle exec cap production deploy
+	CAP_DEPLOY_USER="${USER}" bundle exec cap production deploy
 
 .PHONY: lint-safe
 lint-safe:
@@ -46,6 +46,10 @@ rspec:
 
 .PHONY: ci
 ci: lint-checkonly rspec
+
+.PHONY: cleand
+clean:
+	rm -rf tmp/deploy
 
 .PHONY: usage
 usage:

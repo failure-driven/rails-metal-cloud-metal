@@ -10,7 +10,7 @@ set :branch, "main"
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
-set :deploy_to, "/Users/michael.milewski/projects/failure-driven/rails-metal-cloud-metal/tmp/deploy/#{fetch :application}"
+set :deploy_to, "~/projects/failure-driven/rails-metal-cloud-metal/tmp/deploy/#{fetch :application}"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

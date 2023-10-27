@@ -15,6 +15,19 @@ make ci
 make rspec
 ```
 
+## Demos
+
+### Demo 1
+
+Rails app deployed locally (using capistrano)
+
+```sh
+make
+make demo-1-local-deploy    # TODO not complete
+make rspec                  # in future change to demo-1-test
+# make clean
+```
+
 ## Plan
 
 loosely based on a conversation on [Ruby Australia #melb-meets Oct 5th Slack](https://rubyau.slack.com/archives/C010RUGPRHU/p1696480053027199?thread_ts=1696479747.231869&cid=C010RUGPRHU)
