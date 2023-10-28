@@ -6,7 +6,8 @@ image: user/my-app
 
 # Deploy to these servers.
 servers:
-  - 192.168.0.1
+  # - 192.168.0.1
+  - localhost
 
 # Credentials for your image host.
 registry:
@@ -29,6 +30,8 @@ registry:
 # Use a different ssh user than root
 # ssh:
 #   user: app
+ssh:
+  user: <%= $USER %>
 
 # Configure builder setup.
 # builder:

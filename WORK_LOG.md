@@ -1,5 +1,28 @@
 # Work Log
 
+## Sun 29 Oct 2023
+
+basic Kamal setup
+
+```sh
+kamal setup     # assuming ssh and local user ssh is setup
+
+  INFO [d1efe036] Running /usr/bin/env mkdir -p .kamal on localhost
+  INFO [d1efe036] Finished in 0.111 seconds with exit status 0 (successful).
+Acquiring the deploy lock...
+Ensure Docker is installed...
+  INFO [8fa15605] Running docker -v on localhost
+  INFO [8fa15605] Finished in 0.005 seconds with exit status 127 (failed).
+  INFO [5390fdc3] Running [ "${EUID:-$(id -u)}" -eq 0 ] on localhost
+  INFO [5390fdc3] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [4912d399] Running /usr/bin/env mkdir -p .kamal on localhost
+  INFO [4912d399] Finished in 0.008 seconds with exit status 0 (successful).
+```
+
+unfortunately Kamal was not made to deploy on Mac just from mac
+
+DHH - https://github.com/basecamp/kamal/issues/432#issuecomment-1722291423
+
 ## Fri 27 Oct 2023
 
 ### Starting with Capistrano
