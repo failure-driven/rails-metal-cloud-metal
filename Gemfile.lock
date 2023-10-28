@@ -1,6 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (7.1.1)
+      base64
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      mutex_m
+      tzinfo (~> 2.0)
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     airbrussh (1.5.0)
@@ -8,6 +18,7 @@ GEM
     ast (2.4.2)
     base64 (0.1.1)
     bcrypt_pbkdf (1.1.0)
+    bigdecimal (3.1.4)
     capistrano (3.18.0)
       airbrussh (>= 1.0.0)
       i18n
@@ -23,15 +34,31 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
+    connection_pool (2.4.1)
     diff-lcs (1.5.0)
+    dotenv (2.8.1)
+    drb (2.1.1)
+      ruby2_keywords
     ed25519 (1.3.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     json (2.6.3)
+    kamal (1.0.0)
+      activesupport (>= 7.0)
+      bcrypt_pbkdf (~> 1.0)
+      concurrent-ruby (~> 1.2)
+      dotenv (~> 2.8)
+      ed25519 (~> 1.2)
+      net-ssh (~> 7.0)
+      sshkit (~> 1.21)
+      thor (~> 1.2)
+      zeitwerk (~> 2.5)
     language_server-protocol (3.17.0.3)
     lint_roller (1.1.0)
     matrix (0.4.2)
     mini_mime (1.1.5)
+    minitest (5.20.0)
+    mutex_m (0.1.2)
     net-scp (4.0.0)
       net-ssh (>= 2.6.5, < 8.0.0)
     net-ssh (7.2.0)
@@ -93,6 +120,7 @@ GEM
       rubocop-capybara (~> 2.17)
       rubocop-factory_bot (~> 2.22)
     ruby-progressbar (1.13.0)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.14.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -113,10 +141,14 @@ GEM
     standard-performance (1.2.1)
       lint_roller (~> 1.1)
       rubocop-performance (~> 1.19.1)
+    thor (1.3.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
     websocket (1.2.10)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    zeitwerk (2.6.12)
 
 PLATFORMS
   arm64-darwin-22
@@ -128,6 +160,7 @@ DEPENDENCIES
   capistrano (~> 3.18)
   capybara (~> 3.39)
   ed25519 (~> 1.3)
+  kamal (~> 1.0)
   rspec (~> 3.12)
   rspec-example_steps (~> 3.1)
   rubocop

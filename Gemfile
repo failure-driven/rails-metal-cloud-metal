@@ -15,9 +15,12 @@ group :development do
   gem "ed25519", "~> 1.3"
   gem "bcrypt_pbkdf", "~> 1.1"
 
+  gem "kamal", "~> 1.0"
+
   gem "rubocop", require: false
   gem "rubocop-capybara", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rspec", require: false
   gem "standard", require: false
 end
+

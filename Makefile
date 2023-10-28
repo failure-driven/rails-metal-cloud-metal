@@ -28,6 +28,15 @@ demo:
 demo-1-local-deploy:
 	CAP_DEPLOY_USER="${USER}" bundle exec cap production deploy
 
+.PHONY: kamal-docker
+kamal-docker:
+	docker run -it --rm \
+		-v '${PWD}:/workdir' \
+		-v '/run/host-services/ssh-auth.sock:/run/host-services/ssh-auth.sock' \
+		-e SSH_AUTH_SOCK='/run/host-services/ssh-auth.sock' \
+		-v /var/run/docker.sock:/var/run/docker.sock \
+		ghcr.io/basecamp/kamal:latest
+
 .PHONY: lint-safe
 lint-safe:
 	bundle exec rubocop -a
