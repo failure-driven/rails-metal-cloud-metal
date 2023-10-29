@@ -2,6 +2,55 @@
 
 ## Sun 29 Oct 2023
 
+### MacOS background job
+
+Puma mentions on it's [site](https://github.com/puma/puma) how to start
+background jobs with [FreeBSD's
+rc.d](https://github.com/puma/puma/blob/master/docs/jungle/rc.d/README.md) and
+[systemd](https://github.com/puma/puma/blob/master/docs/systemd.md) but neither
+are available on MacOS? it seems that on a Mac we want to use
+[launchd](https://www.launchd.info/) to manage `LaunchAgents` for the current
+user or `LaunchDeamons` for root or a specifiec user.
+
+As such here was an attempt
+
+based on:
+  https://coderwall.com/p/3xuucg/daemonize-puma-with-launchd-on-mac-osx-with-rvm
+
+```sh
+# copy some hard coded config to run puma on port 9999 for
+# ~/projects/failure-driven/golden-shas
+cp config/failure-driven.golden-sha.service.plist \
+    ~/Library/LaunchAgents/failure-driven.golden-sha.service.plist
+
+# load it?
+launchctl load -w ~/Library/LaunchAgents/failure-driven.golden-sha.service.plist
+
+# list it? and it shows it is erroring :(
+launchctl list | ag failure-driven
+    -    1    failure-driven.golden-sha
+
+# how to unload it? etc ¯\_(ツ)_/¯
+
+# but the command seems to half work
+${HOME}/.asdf/shims/puma -p9999 ${HOME}/projects/failure-driven/golden-shas/config.ru
+
+# but
+    ...
+    ~/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/stringio-3.0.8/lib/stringio.bundle:
+        warning: already initialized constant StringIO::VERSION
+    * Listening on http://0.0.0.0:9999
+    Use Ctrl-C to stop
+
+# when we curl it it gets stuck and logs
+2023-10-29 12:09:39 +1100 Listen loop: #<TypeError: wrong argument type strio (expected strio)>
+```
+
+if we get this working, probably want to use `IRB` to allow customisations of
+the `plist` file or similar, sort of like Rails does with config/database.yml
+
+### Kamal
+
 basic Kamal setup
 
 ```sh

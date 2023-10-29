@@ -62,6 +62,7 @@ GEM
     net-scp (4.0.0)
       net-ssh (>= 2.6.5, < 8.0.0)
     net-ssh (7.2.0)
+    nio4r (2.5.9)
     nokogiri (1.15.4-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.15.4-x86_64-linux)
@@ -71,6 +72,8 @@ GEM
       ast (~> 2.4.1)
       racc
     public_suffix (5.0.3)
+    puma (6.4.0)
+      nio4r (~> 2.0)
     racc (1.7.1)
     rack (3.0.8)
     rack-test (2.1.0)
@@ -161,6 +164,7 @@ DEPENDENCIES
   capybara (~> 3.39)
   ed25519 (~> 1.3)
   kamal (~> 1.0)
+  puma (~> 6.4)
   rspec (~> 3.12)
   rspec-example_steps (~> 3.1)
   rubocop

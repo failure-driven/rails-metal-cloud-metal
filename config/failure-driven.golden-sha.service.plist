@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>failure-driven.golden-sha</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/michael.milewski/.asdf/shims/puma</string>
+    <string>-p9999</string>
+    <string>/Users/michael.milewski/projects/failure-driven/golden-shas/config.ru</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardErrorPath</key>
+  <string>log/error.log</string>
+  <key>StandardOutPath</key>
+  <string>log/access.log</string>
+  <key>WorkingDirectory</key>
+  <string>/Users/michael.milewski/projects/failure-driven/golden-shas</string>
+</dict>
+</plist>

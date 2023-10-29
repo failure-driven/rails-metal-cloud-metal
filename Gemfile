@@ -2,6 +2,9 @@
 
 source "https://rubygems.org"
 
+# production web server?
+gem "puma", "~> 6.4"
+
 group :test do
   gem "capybara", "~> 3.39"
   gem "rspec", "~> 3.12"
@@ -23,4 +26,3 @@ group :development do
   gem "rubocop-rspec", require: false
   gem "standard", require: false
 end
-
