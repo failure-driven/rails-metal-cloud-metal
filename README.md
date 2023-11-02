@@ -50,6 +50,10 @@ a guide for zero to hero and back again
     - [ ] cost comparison
     - [ ] smart deploy template?
 
+## Experiments
+
+- [Experiments in home lab cluster](./experiments/in_home_lab_cluster)
+
 ## Work Log
 
 available at [./WORK_LOG.md](./WORK_LOG.md)
