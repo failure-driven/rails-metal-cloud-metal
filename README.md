@@ -53,6 +53,7 @@ a guide for zero to hero and back again
 ## Experiments
 
 - [Experiments in home lab cluster](./experiments/in_home_lab_cluster)
+- [Experiments in load balancers](./experiments/in_load_balancers)
 
 ## Work Log
 

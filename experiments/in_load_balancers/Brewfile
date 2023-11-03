@@ -1,0 +1,15 @@
+# mange dependencies with brew https://brew.sh/
+
+# load balancer tools
+brew "haproxy" 		  # haproxy: stable 2.8.3 (bottled) Reliable, high
+# performance TCP/HTTP load balancer
+# https://www.haproxy.org/
+
+# utility tools
+brew "jq"                 # UNIX tool for parsing and querying JSON
+brew "tmux"               # terminal multiplexer for automating running many
+# processes across many windows
+brew "watch"              # watch: stable 4.0.4 (bottled), HEAD Executes a
+# program periodically, showing output fullscreen
+# https://gitlab.com/procps-ng/procps
+brew "wget"               # UNIX tool for fetching things from the nets
