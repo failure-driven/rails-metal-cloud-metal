@@ -1,0 +1,13 @@
+# mange dependencies with brew https://brew.sh/
+
+# load balancer tools
+brew "awscli"             # Official Amazon AWS command-line interface
+                          # https://aws.amazon.com/cli/
+
+# utility tools
+brew "jq"                 # UNIX tool for parsing and querying JSON
+brew "tmux"               # terminal multiplexer for automating running many
+                          # processes across many windows
+brew "watch"              # watch: stable 4.0.4 (bottled), HEAD Executes a
+                          # program periodically, showing output fullscreen
+                          # https://gitlab.com/procps-ng/procps
