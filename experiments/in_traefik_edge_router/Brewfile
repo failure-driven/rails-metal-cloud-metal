@@ -1,0 +1,5 @@
+# mange dependencies with brew https://brew.sh/
+
+# proxy
+brew "traefik"            # Modern reverse proxy https://traefik.io/
+

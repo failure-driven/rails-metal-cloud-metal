@@ -17,6 +17,7 @@ setup:
 	@docker ps && \
 		echo "\n\tdocker running, ${GREEN}good to demo ✅${NC}" || \
 		echo "\n\tdocker not running, ${RED}start docker first ❌${NC}"
+	brew bundle
 
 .PHONY: demo
 demo:
