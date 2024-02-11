@@ -1,5 +1,15 @@
 # Work Log
 
+## Sun 11 Feb 2023
+
+- lightning talk for Sydney and Melbourne RORO meetups around **"Can I host a
+  rails app from a home server?"**
+    - https://github.com/rubyaustralia/melbourne-ruby/issues/226
+- presentation
+    - /presentations/PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md
+- sample code
+    - /spikes/rails_app_home_server
+
 ## Sun 29 Oct 2023
 
 ### MacOS background job
