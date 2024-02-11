@@ -6,9 +6,13 @@
   rails app from a home server?"**
     - https://github.com/rubyaustralia/melbourne-ruby/issues/226
 - presentation
-    - /presentations/PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md
+    - [/presentations/PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md](
+        /presentations/PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md
+      )
 - sample code
-    - /spikes/rails_app_home_server
+    - [/spikes/rails_app_home_server](
+        /spikes/rails_app_home_server
+      )
 
 ## Sun 29 Oct 2023
 
