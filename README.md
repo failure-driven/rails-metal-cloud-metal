@@ -15,6 +15,29 @@ make ci
 make rspec
 ```
 
+## Presentations
+
+### A conference 2024???
+
+TODO ...
+
+### RORO Melbourne - Thu 22 Feb 2024
+
+✨ soon ✨
+
+- https://www.meetup.com/ruby-on-rails-oceania-melbourne/events/297781308/#
+- https://github.com/rubyaustralia/melbourne-ruby/issues/226
+
+### RORO Sydney - Tue 13 Feb 2024
+
+✨ Tonight - be there 🫵 ✨
+
+- https://lu.ma/13u979yj
+- [**Presentation** - PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md](presentations/PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md)
+- [**Code Samples** - spikes/rails_app_home_server](spikes/rails_app_home_server)
+
+    <img width="425" alt="failure_driven_rails_metal_cloud_metal_qr" src="https://github.com/failure-driven/rails-metal-cloud-metal/assets/278723/76cad1f2-549b-4d4d-bd95-b0d54097b28f">
+
 ## Demos
 
 ### Demo 1
