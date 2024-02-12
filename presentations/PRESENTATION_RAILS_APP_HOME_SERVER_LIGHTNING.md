@@ -1,5 +1,7 @@
 # Can I host a rails app from a home server?
 
+💎 🛤️  🏠
+
 ---
 
 # Can I host a rails app from a home server?
@@ -57,24 +59,47 @@ please clap 👏
 ## So why run a home server?
 
 - because I can
-- because Anton asked me
-TODO quote
+- because Anton asked
+
+@friendlyantz - Ruby AU slack Oct 5
+> Keen to hear about these topics(hope it inspires someone):
+
+>   - Self hosting ruby app
 
 ---
 
 ## So why run a home server?
 
 - because I can
-- because Anton asked me
-- becasue I want to be sysadmin/devops skilled
+- because Anton asked
+- becasue I want devops skills
 
 ---
 
 ## So why run a home server?
 
 - because I can
-- because Anton asked me
-- becasue I want to be sysadmin/devops skilled
+- because Anton asked
+- becasue I want devops skills
+- because internet like it's 1999
+
+---
+
+## So why run a home server?
+
+- because I can
+- because Anton asked
+- becasue I want devops skills
+- because internet like it's 1999
+- because I want to create a threat map
+
+---
+
+## So why run a home server?
+
+- because I can
+- because Anton asked
+- becasue I want devops skills
 - because internet like it's 1999
 - because I want to create a threat map
 - because it's cheaper?
@@ -128,11 +153,13 @@ https://twitter.com/dhh/status/1753436194753704313
 ### Custom hardware
 
 > At one time I was looking at using a hardware module, a QRNG (Quantum Random
-> Number Generator) to do true random numbers at Gleam a-la random.org. Getting
-> that shit in to a rack and managed is pretty pricey. So we actually
-> considered running it from someone's house
+> Number Generator) to do our own true random numbers at Gleam. Getting that
+> shit in to a rack and managed is pretty pricey. So we considered running it
+> from someone’s house instead.
 
-John Sherwood @pony (gleam.io)
+John Sherwood @ponny (gleam.io)
+
+https://www.idquantique.com/random-number-generation/products/quantis-random-number-generator/
 
 ---
 
@@ -155,6 +182,20 @@ gamesbyemail.com
 - large data
 - fast machines
 - custom hardware - bable of cell phones
+
+---
+
+## So why run a home server?
+
+1. I can
+1. Anton asked
+1. I want devops skills
+1. internet like it's 1999
+1. I want to create a threat map
+1. it's cheaper?
+1. large data
+1. fast machines
+1. custom hardware - bable of cell phones, QRNG
 
 ---
 
@@ -181,6 +222,8 @@ ipconfig getifaddr en0 # wireless
 ipconfig getifaddr en1 # ethernet
 
 dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com # public
+
+make my-ip
 ```
 
 ---
@@ -230,15 +273,92 @@ what about Cloudflare tunnel
 ## What's next
 
 - Mac OS deploy - launchd
+
+---
+
+## What's next
+
+- Mac OS deploy - launchd
 - Docker
-- Kamal
-- Capistrano
+
+---
+
+## What's next
+
+- Mac OS deploy - launchd
+- Docker
+- Kamal - _requires docker_
+
+---
+
+## What's next
+
+- Mac OS deploy - launchd
+- Docker
+- Kamal - _requires docker_
+- Capistrano - _requires SSH_
+
+---
+
+## What's next
+
+- Mac OS deploy - launchd
+- Docker
+- Kamal - _requires docker_
+- Capistrano - _requires SSH_
+- Ras Pi
+
+---
+
+## What's next
+
+- Mac OS deploy - launchd
+- Docker
+- Kamal - _requires docker_
+- Capistrano - _requires SSH_
 - Ras Pi
 - to Cloud
-- to On-prem cluster
-- Zimablade
+
+---
+
+## What's next
+
+- Mac OS deploy - launchd
+- Docker
+- Kamal - _requires docker_
+- Capistrano - _requires SSH_
+- Ras Pi
+- to Cloud
+- to On-prem cluster - _Zimablade_
+
+---
+
+## What's next
+
+- Mac OS deploy - launchd
+- Docker
+- Kamal - _requires docker_
+- Capistrano - _requires SSH_
+- Ras Pi
+- to Cloud
+- to On-prem cluster - _Zimablade_
 - 🤘metal🎸 - ☁️ cloud☁️  - 🤘metal🗡️
     - https://github.com/failure-driven/rails-metal-cloud-metal
+
+---
+
+## What's next
+
+- Mac OS deploy - launchd
+- Docker
+- Kamal - _requires docker_
+- Capistrano - _requires SSH_
+- Ras Pi
+- to Cloud
+- to On-prem cluster - _Zimablade_
+- 🤘metal🎸 - ☁️ cloud☁️  - 🤘metal🗡️
+    - https://github.com/failure-driven/rails-metal-cloud-metal
+
 - give slides support for imgcat
 
 ---

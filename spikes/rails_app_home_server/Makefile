@@ -16,6 +16,13 @@ APP_REVISION    = $(shell git rev-parse HEAD)
 install:
 	bundle install
 
+.PHONY: my-ip
+my-ip:
+	@echo "${GREEN}EXTERNAL 🌏${NC}\n\t"
+	dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com
+	@echo "\n${GREEN}INTERNAL 🏡${NC}\n\t"
+	ipconfig getifaddr en0
+	# ipconfig getifaddr en1
 
 .PHONY: usage
 usage:
