@@ -32,5 +32,6 @@ usage:
 	@echo "Getting started"
 	@echo
 	@echo "${YELLOW}make install${NC}                  install dependencies"
+	@echo "${YELLOW}make my-ip${NC}                    display public and private IP address"
 	@echo
 
