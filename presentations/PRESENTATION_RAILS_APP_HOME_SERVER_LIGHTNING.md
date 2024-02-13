@@ -83,6 +83,8 @@ please clap 👏
 - becasue I want devops skills
 - because internet like it's 1999
 
+https://ghuntley.com/internet/
+
 ---
 
 ## So why run a home server?
