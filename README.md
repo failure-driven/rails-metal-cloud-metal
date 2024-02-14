@@ -33,8 +33,12 @@ TODO ...
 ✨ Tonight - be there 🫵 ✨
 
 - https://lu.ma/13u979yj
-- [**Presentation** - PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md](presentations/PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md)
-- [**Code Samples** - spikes/rails_app_home_server](spikes/rails_app_home_server)
+- [**Presentation** - PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md](
+    presentations/PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md
+  )
+- [**Code Samples** - experiments/in_rails_on_home_server](
+    experiments/in_rails_on_home_server/
+  )
 
     <img width="425" alt="failure_driven_rails_metal_cloud_metal_qr" src="https://github.com/failure-driven/rails-metal-cloud-metal/assets/278723/76cad1f2-549b-4d4d-bd95-b0d54097b28f">
 
