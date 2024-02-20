@@ -28,9 +28,10 @@ TODO ...
 - https://www.meetup.com/ruby-on-rails-oceania-melbourne/events/297781308/#
 - https://github.com/rubyaustralia/melbourne-ruby/issues/226
 
-![this repo Git QR code](
-  https://github.com/failure-driven/rails-metal-cloud-metal/blob/7eeee51d2cd28772e2eada7ffba138675150effe/presentations/images/failure-driven_rails-metal-cloud-metal_git_qr.png
-)
+<img
+    width="300"
+    alt="failure_driven_rails_metal_cloud_metal_qr"
+    src="https://github.com/failure-driven/rails-metal-cloud-metal/blob/7eeee51d2cd28772e2eada7ffba138675150effe/presentations/images/failure-driven_rails-metal-cloud-metal_git_qr.png">
 
 ### RORO Sydney - Tue 13 Feb 2024
 
