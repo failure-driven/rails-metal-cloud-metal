@@ -37,13 +37,21 @@ _Can I host a Rails App from a home server?_ <!-- .element: class="fragment" -->
 
 ```zsh
 rails new
+
 bin/rails server
-bin/rails server RAILS_ENV=production ?????
+
+bin/rails server RAILS_ENV=production # ?????
+
+bin/dev                               # ¯\_(ツ)_/¯
 ```
+
+- http://localhost:3000
 
 ---
 
 ## Demo
+
+- https://metal-demo.pair-with.me
 
 <iframe
   data-autoplay
@@ -53,18 +61,7 @@ bin/rails server RAILS_ENV=production ?????
   frameborder="0"
 ></iframe>
 
----
-
-## Demo
-
-```
-open http://...
-stop server
-http://... # reload
-start server
-http://... # reload
 please clap 👏
-```
 
 ---
 
@@ -90,70 +87,61 @@ please clap 👏
 - Linode ¯\_(ツ)_/¯
 
 ---
+  <!-- .element: data-transition="none" -->
 
-## So why run a home server?
+## Why?
 
-- because I can
+- because I can <!-- .element: data-fragment-index="1" class="fragment" -->
+- because Anton asked
+  <!-- .element: data-fragment-index="2" class="fragment" style="margin-bottom: 600px; width: 1000px;" -->
 
 ---
+  <!-- .element: data-transition="none" -->
 
-## So why run a home server?
+## Why?
 
 - because I can
 - because Anton asked
-
-@friendlyantz - Ruby AU slack Oct 5
-> Keen to hear about these topics(hope it inspires someone):
-
->   - Self hosting ruby app
+![
+  Anton quote
+](
+  ./images/01_anton_quote.png
+)
 
 ---
+  <!-- .element: data-transition="none" -->
 
-## So why run a home server?
+## Why?
 
 - because I can
 - because Anton asked
-- becasue I want devops skills
+- becasue I want devops skills <!-- .element: data-fragment-index="1" class="fragment" -->
+- because internet like it's 1999 <!-- .element: data-fragment-index="2" class="fragment" -->
+![
+  https://ghuntley.com/internet/
+](
+  ./images/02_ghuntley_internet_van.jpeg
+)
 
 ---
+  <!-- .element: data-transition="none" -->
 
-## So why run a home server?
-
-- because I can
-- because Anton asked
-- becasue I want devops skills
-- because internet like it's 1999
-
-https://ghuntley.com/internet/
-
----
-
-## So why run a home server?
+## Why?
 
 - because I can
 - because Anton asked
 - becasue I want devops skills
 - because internet like it's 1999
 - because I want to create a threat map
+- because it's cheaper?
+  <!-- .element: data-fragment-index="1" class="fragment" style="margin-bottom: 600px; width: 1000px;" -->
 
 ---
 
-## So why run a home server?
-
-- becasue I can <!-- .element: class="fragment" -->
-- because Anton asked <!-- .element: class="fragment" -->
-- becasue I want devops skills <!-- .element: class="fragment" -->
-- because internet like it's 1999 <!-- .element: class="fragment" -->
-- because I want to create a threat map <!-- .element: class="fragment" -->
-- because it's cheaper? <!-- .element: class="fragment" -->
-
----
-
-## So why run a home server?
-
-### cost saving
+## Why? - cost saving
 
 RECLAIM THE STACK!
+
 https://reclaim-the-stack.com/
 
 > We spent 7 months building a Kubernetes based platform to replace Heroku. The
@@ -161,11 +149,10 @@ https://reclaim-the-stack.com/
 
 ---
 
-## So why run a home server?
-
-### cost saving
+## Why? - cost saving
 
 KAMAL formerly MRSK
+
 https://kamal-deploy.org/
 
 > Leaving the cloud will save us $7 million over five years.
@@ -173,15 +160,18 @@ https://kamal-deploy.org/
 
 ---
 
-## So why run a home server?
-
-### cost saving
+## Why? - cost saving
 
 - https://twitter.com/dhh/status/1755600973492564067
-> @dhh
-> Oh it’s coming. Physical distribution of self-hosted systems are a great
-> idea. But we can do more than just ship you the media, we can send you
-> the whole computer! (Pi 5s run Campfire great!)
+![
+  https://ghuntley.com/internet/
+](
+  ./images/03_dhh_quote.png
+)
+
+---
+
+## Why? - cost saving
 
 https://twitter.com/dhh/status/1753436194753704313
 > @dhh
@@ -191,9 +181,7 @@ https://twitter.com/dhh/status/1753436194753704313
 
 ---
 
-## So why run a home server?
-
-### Custom hardware
+## Custom Hardware
 
 > At one time I was looking at using a hardware module, a QRNG (Quantum Random
 > Number Generator) to do our own true random numbers at Gleam. Getting that
@@ -202,13 +190,19 @@ https://twitter.com/dhh/status/1753436194753704313
 
 John Sherwood @ponny (gleam.io)
 
-https://www.idquantique.com/random-number-generation/products/quantis-random-number-generator/
+---
+
+## Custom Hardware
+
+John Sherwood @ponny (gleam.io)
+
+![QRNG for gleam.io](
+  ./images/04_qrng_arduino.png
+)
 
 ---
 
-## So why run a home server?
-
-### Custom hardware
+## Custom Hardware
 
 > Introducing the Dice-O-Matic mark II, now generating the die rolls on
 > GamesByEmail.com. It is a 7 foot tall, 104 pound, dice-eating monster,
@@ -218,17 +212,17 @@ gamesbyemail.com
 
 ---
 
-## So why run a home server?
+## Custom Hardware
 
-### Custom hardware
+gamesbyemail.com
 
-- large data
-- fast machines
-- custom hardware - bable of cell phones
+![dice-o-matic by GamesByEmail](
+ ./images/05_diceomatic.jpeg
+)
 
 ---
 
-## So why run a home server?
+## why home server?
 
 1. I can
 1. Anton asked
@@ -236,9 +230,11 @@ gamesbyemail.com
 1. internet like it's 1999
 1. I want to create a threat map
 1. it's cheaper?
-1. large data
-1. fast machines
-1. custom hardware - bable of cell phones, QRNG
+    - large data
+    - fast machines
+1. custom hardware
+    - bable of cell phones
+    - QRNG
 
 ---
 
@@ -246,11 +242,9 @@ gamesbyemail.com
 
 - https://darknetdiaries.com/transcript/86
 
-> But he looked at where the site was hosted and it was hosted on a residential
-> IP address. Hm, it seemed like this LinkedIn site reliability engineer was
-> running a web server out of his house. This means there are open ports from
-> the internet into his computers. The hacker thought well, hm, if I can get
-> into this engineer’s home computer, this might give me a way into LinkedIn.
+> it was hosted on a residential IP address. Hm, it seemed like this LinkedIn
+> site reliability engineer was running a web server out of his house. This
+> means there are open ports from the internet into his computers.
 
 ---
 
@@ -264,7 +258,8 @@ open https://whatismyipaddress.com/
 ipconfig getifaddr en0 # wireless
 ipconfig getifaddr en1 # ethernet
 
-dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com # public
+# public
+dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com
 
 make my-ip
 ```
@@ -275,14 +270,22 @@ make my-ip
 
 - https://en.wikipedia.org/wiki/Carrier-grade_NAT
 
-> With CGNAT, end sites, in particular residential networks, are configured
-> with private network addresses that are translated to public IPv4 addresses
-> by middlebox network address translator devices embedded in the network
-> operator's network, permitting the sharing of small pools of public addresses
-> among many end users. This essentially repeats the traditional
-> customer-premise NAT function at the ISP level.
-
+> With CGNAT, end sites, with private network addresses that are translated
+> to public IPv4 addresses, permitting the sharing of small pools of public
+> addresses among many end users.
+>
 > Carrier-grade NAT is often used for mitigating IPv4 address exhaustion.
+
+---
+
+## What's going on?
+
+- CGNAT
+    - Carrier-grade Netwrok Address Translation
+
+![CGNAT](
+  ./images/06_CGN_IPv4.svg.png
+)
 
 ---
 
@@ -290,89 +293,107 @@ make my-ip
 
 AWS EC2 with public IP address
 
-- IP
-- traffic
-- reverse SSH
+- reverse SSH tunnel <!-- .element: class="fragment" -->
+  ```sh
+    ssh \
+        -i "~/.ssh/demo.pem" \
+        -R 8080:0.0.0.0:9292 \
+        ec2-user@AAA.XXX.YYY.ZZZ
+  ```
+  <!-- .element: style="min-width: 100%;" class="fragment" -->
+  ![CGNAT](
+    ./images/ssh_tunnel_explanation.png
+  ) <!-- .element: style="max-width: 400px;" class="fragment" -->
 
 ---
 
-## Why not run it on EC2?
+## Escaping CGNAT
+
+Why not run it on EC2?
 
 - instance size
 - QRNG
 - huge DB
 - dice-o-matic
 
----
+        </script>
+      </section>
+      <section>
+<h2>Escaping CGNAT</h2>
+
+CloudFlare tunnel?
+
+<ul>
+  <li class="fragment">
+    sign up to <strong>CloudFlare</strong>
+  </li>
+  <li class="fragment">
+    open up the dash <a src="https://dash.cloudflare.com/">
+      https://dash.cloudflare.com/
+    </a>
+  </li>
+  <li class="fragment">
+    add <strong>Website</strong>
+  </li>
+  <li class="fragment">
+    host your <strong>DNS</strong>
+  </li>
+  <li class="fragment">
+    Add a <strong>Zero Trust</strong> >
+      <strong>Network</strong> >
+      <strong>Tunnel</strong>
+    <pre>Public hostname: metal-demo.pair-with.me</pre>
+    <pre>Path:            *</pre>
+    <pre>Service:         http://localhost:3000</pre>
+  </li>
+</ul>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
 
 ## Escaping CGNAT
 
-what about Cloudflare tunnel
+CloudFlare tunnel?
 
-- demo
+- run cloudflared (_alternately in Docker 🐳_)
+  <!-- .element: class="fragment" -->
+  ```
+  brew install cloudflared &&
+
+  sudo cloudflared service install eyJ...yJ9
+  ```
+  <!-- .element: style="min-width: 100%;" class="fragment" -->
+
+- **Boom** 💥
+  <!-- .element: class="fragment" -->
 
 ---
 
 ## What's next
 
 - Mac OS deploy - launchd
-
----
-
-## What's next
-
-- Mac OS deploy - launchd
+  <!-- .element: class="fragment" -->
 - Docker
-
----
-
-## What's next
-
-- Mac OS deploy - launchd
-- Docker
-- Kamal - _requires docker_
-
----
-
-## What's next
-
-- Mac OS deploy - launchd
-- Docker
-- Kamal - _requires docker_
-- Capistrano - _requires SSH_
-
----
-
-## What's next
-
-- Mac OS deploy - launchd
-- Docker
-- Kamal - _requires docker_
-- Capistrano - _requires SSH_
+  <!-- .element: class="fragment" -->
+- Kamal - requires docker
+  <!-- .element: class="fragment" -->
+- Capistrano - requires SSH
+  <!-- .element: class="fragment" -->
 - Ras Pi
+  <!-- .element: class="fragment" -->
+- to Cloud ☁️
+  <!-- .element: class="fragment" -->
+- to On-prem cluster - Zimablade
+  <!-- .element: class="fragment" -->
 
 ---
 
 ## What's next
 
-- Mac OS deploy - launchd
-- Docker
-- Kamal - _requires docker_
-- Capistrano - _requires SSH_
-- Ras Pi
-- to Cloud
-
----
-
-## What's next
-
-- Mac OS deploy - launchd
-- Docker
-- Kamal - _requires docker_
-- Capistrano - _requires SSH_
-- Ras Pi
-- to Cloud
-- to On-prem cluster - _Zimablade_
+- Zima cluster what?
+![zima cluster](
+  ./images/07_zima_cluster.jpeg
+) <!-- .element: class="fragment" -->
 
 ---
 
@@ -386,23 +407,9 @@ what about Cloudflare tunnel
 - to Cloud
 - to On-prem cluster - _Zimablade_
 - 🤘metal🎸 - ☁️ cloud☁️  - 🤘metal🗡️
+   <!-- .element: class="fragment" -->
     - https://github.com/failure-driven/rails-metal-cloud-metal
-
----
-
-## What's next
-
-- Mac OS deploy - launchd
-- Docker
-- Kamal - _requires docker_
-- Capistrano - _requires SSH_
-- Ras Pi
-- to Cloud
-- to On-prem cluster - _Zimablade_
-- 🤘metal🎸 - ☁️ cloud☁️  - 🤘metal🗡️
-    - https://github.com/failure-driven/rails-metal-cloud-metal
-
-- give slides support for imgcat
+      <!-- .element: class="fragment" -->
 
 ---
 
@@ -411,6 +418,11 @@ what about Cloudflare tunnel
 Michael Milewski - @saramic
 
 https://github.com/failure-driven/rails-metal-cloud-metal
+  <!-- .element: style="min-width: 100%; font-size: 30px;" -->
+![FailureDriven GitHub rails-metal-cloud-metal](
+  images/failure-driven_rails-metal-cloud-metal_git_qr.png
+) <!-- .element: style="max-width: 300px;" -->
+
         </script>
       </section>
     </div>

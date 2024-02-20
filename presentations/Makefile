@@ -14,8 +14,12 @@ NC      = \033[0m
 images:
 	bin/makefile/show-images.sh
 
-.PHONY: slides
-slides:
+.PHONY: slides-roro-melb
+slides-roro-melb:
+	npm install && npm run dev
+
+.PHONY: slides-roro-syd
+slides-roro-syd:
 	slides PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md
 
 .PHONY: usage
@@ -23,7 +27,8 @@ usage:
 	@echo
 	@echo "Hi ${GREEN}${USER}!${NC} Welcome to ${RED}${CURRENT_DIR}${NC}"
 	@echo
-	@echo "${YELLOW}make slides${NC}                     slides"
+	@echo "${YELLOW}make slides-roro-melb${NC}           reveal.js slides inside vite"
+	@echo "${YELLOW}make slides-roro-syd${NC}            brew slides"
 	@echo "${YELLOW}make images${NC}                     images for slides - because"
 	@echo
 
