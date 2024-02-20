@@ -23,14 +23,18 @@ TODO ...
 
 ### RORO Melbourne - Thu 22 Feb 2024
 
-✨ soon ✨
+✨ soon - be there 🫵 ✨
 
 - https://www.meetup.com/ruby-on-rails-oceania-melbourne/events/297781308/#
 - https://github.com/rubyaustralia/melbourne-ruby/issues/226
 
+![this repo Git QR code](
+  https://github.com/failure-driven/rails-metal-cloud-metal/blob/7eeee51d2cd28772e2eada7ffba138675150effe/presentations/images/failure-driven_rails-metal-cloud-metal_git_qr.png
+)
+
 ### RORO Sydney - Tue 13 Feb 2024
 
-✨ Tonight - be there 🫵 ✨
+✨ Hope you werre there 🎉 ✨
 
 - https://lu.ma/13u979yj
 - [**Presentation** - PRESENTATION_RAILS_APP_HOME_SERVER_LIGHTNING.md](
@@ -39,8 +43,6 @@ TODO ...
 - [**Code Samples** - experiments/in_rails_on_home_server](
     experiments/in_rails_on_home_server/
   )
-
-    <img width="425" alt="failure_driven_rails_metal_cloud_metal_qr" src="https://github.com/failure-driven/rails-metal-cloud-metal/assets/278723/76cad1f2-549b-4d4d-bd95-b0d54097b28f">
 
 ## Demos
 
